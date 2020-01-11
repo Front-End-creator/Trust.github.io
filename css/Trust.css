@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Badas Neus Regular";
+    src: url("../fonts/BebasNeueRegular.otf") format("opentype");
+    }
+
+body {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Badas Neus Regular";
+}
+
+.header{
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}	
+.item{
+    margin-top: 20px;
+}
+
+#main{
+    background-image: url(../img/FullSizeRender-4k\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul{
+    margin: 5px;
+    padding: 0px;
+}
+
+#Service{
+    height: 1500px;
+    background-color: black;
+}
+
+.LogoType{
+    width: 30%;
+    margin-top: 250px;
+    margin-bottom: 40px;
+}
+
+
+.list{
+    transition: 0.5s;
+    text-decoration: none; 
+    color: grey;
+    font-size: 23px;
+}
+
+.list:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+.logo{
+    width: 60px;
+    height: 60px;
+    transition: 2s;
+}
+
+ .logo:hover{
+    filter: brightness(10);
+} 
+
+
+.flex-conteiner  li{
+	list-style: none;
+}
+
+.phone{
+    color: white;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+#Abt{
+    background-color: white;
+    margin-top: 250px;
+}
+
+#media{
+    display: none;
+}
+
+#helper{
+    font-size: 40px;
+    text-align: center;
+    margin:0;
+    padding-bottom: 40px;
+}
+
+#Abt p{
+    font-size: 40px;
+}
+#About{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+
+
+.RecButt{
+    transition: 0.5s;
+    outline:none;
+    font-size: 23px;
+    border-radius: 12px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+    color:black;
+    background-color:white;
+    border:none;
+    font-family: "Badas Neus Regular";
+    margin-top:15px;
+}
+
+.RecButt:hover{
+    background-color:red;
+    color:white;
+    cursor: pointer;
+}
+
+
+.Image{
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.AboutImg{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.flex-conteiner{
+    display:flex;
+    justify-content: space-between;
+}
+
+#log, #log_1{
+    text-align: center;
+}
+
+.log_Butt{
+    outline:none;
+    font-size: 35px;
+    border-width: 3px;
+    padding: 5px 30px 5px 30px;
+    background: none;
+    margin-right: 20px;
+    border-style: solid;
+    font-family: "Badas Neus Regular";
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+}
+
+.log_Butt:hover{
+    background-color: #c52d2f;
+    border-color: #c52d2f;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+ body
+ {
+   margin: 0;
+   padding: 0;
+ }
+
+ #media{
+     display: inline;
+ }
+
+
+ .header{
+     display: none;
+ }
+
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 30px;
+   left: 50px;
+
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #menuToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #menuToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #cdcdcd;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ 
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+ }
+
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+ #menu
+ {
+   position: absolute;
+   width: 100%;
+   margin: -100px 0 0 -50px;
+   padding-bottom: 50px;
+   padding-top: 100px;
+   
+   background: #ededed;
+   list-style-type: none;
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ #menu li
+ {
+    text-align: center;
+   padding: 20px 0;
+   font-size: 22px;
+ }
+
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
+}
