@@ -23,10 +23,12 @@ body {
 }
 
 #main{
-    background-image: url(../img/FullSizeRender-4k\ \(1\).jpg);
+    background-image: url(../img/back.jpg);
     background-size: cover;
     background-attachment: fixed;
+    height:800px;
 }
+
 ul{
     margin: 5px;
     padding: 0px;
@@ -39,7 +41,7 @@ ul{
 
 .LogoType{
     width: 30%;
-    margin-top: 250px;
+    margin-top: 300px;
     margin-bottom: 40px;
 }
 
@@ -80,7 +82,6 @@ ul{
 
 #Abt{
     background-color: white;
-    margin-top: 250px;
 }
 
 #media{
@@ -99,9 +100,9 @@ ul{
 }
 #About{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     font-size: 80px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 
@@ -160,6 +161,7 @@ ul{
     text-decoration: none;
     color:white;
     transition: 0.5s;
+    margin-bottom: 200px;
 }
 
 .log_Butt:hover{
@@ -177,10 +179,22 @@ ul{
    padding: 0;
  }
 
+ #main{
+    background-image: url(../img/DSC_2666.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:800px;
+}
+
+
  #media{
      display: inline;
  }
 
+
+ .LogoType{
+    width: 50%;
+}
 
  .header{
      display: none;
