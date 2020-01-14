@@ -136,8 +136,6 @@ ul{
 .AboutImg{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    
 }
 
 .flex-conteiner{
@@ -186,6 +184,14 @@ ul{
     height:800px;
 }
 
+.Image{
+    width: 90%;
+}
+
+.AboutImg{
+    display: block;
+    text-align: center;
+}
 
  #media{
      display: inline;
