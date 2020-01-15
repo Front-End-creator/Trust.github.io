@@ -37,6 +37,7 @@ ul{
 
 #Service{
     background-color: black;
+    height: 1500px;
 }
 
 .LogoType{
@@ -323,4 +324,15 @@ ul{
  {
    transform: none;
  }
+}
+
+@media (max-width: 1068px){
+    .Image{
+        width: 90%;
+    }
+    
+    .AboutImg{
+        display: block;
+        text-align: center;
+    }
 }
