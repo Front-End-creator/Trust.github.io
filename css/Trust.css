@@ -18,13 +18,14 @@ body {
     background-color: black;
     position: fixed;
     z-index: 100;
+    height: 74px;
 }	
 .item{
     margin-top: 20px;
 }
 
 #main{
-    background-image: url(../img/back.jpg);
+    background-image: url(../img/back_demo.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:800px;
@@ -119,7 +120,7 @@ ul{
     background-color:white;
     border:none;
     font-family: "Badas Neus Regular";
-    margin-top:15px;
+    margin-top:13.2px;
 }
 
 .RecButt:hover{
@@ -153,19 +154,19 @@ ul{
     font-size: 35px;
     border-width: 3px;
     padding: 5px 30px 5px 30px;
-    background: none;
+    background-color: white;
     margin-right: 20px;
     border-style: solid;
     font-family: "Badas Neus Regular";
     text-decoration: none;
-    color:white;
+    color:#c52d2f;
     transition: 0.5s;
     margin-bottom: 200px;
 }
 
 .log_Butt:hover{
+    color:white;
     background-color: #c52d2f;
-    border-color: #c52d2f;
     cursor: pointer;
 }
 
