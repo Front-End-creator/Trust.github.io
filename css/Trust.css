@@ -217,15 +217,14 @@ ul{
    user-select: none;
  }
  
- #menuToggle a
+ .link
  {
    text-decoration: none;
    color: #232323;
-   
    transition: color 0.3s ease;
  }
  
- #menuToggle a:hover
+ .link:hover
  {
    color: tomato;
  }
@@ -298,14 +297,35 @@ ul{
    transform: rotate(-45deg) translate(0, -1px);
  }
 
+ .RecBut{
+     background: black;
+     border-radius: 15px;
+     font-size: 22px;
+     color: white;
+     font-family: "Badas Neus Regular";
+     outline:none;
+     border-style: solid;
+     padding: 10px 40px 10px 40px;
+ }
+
+#MobLog{
+    width: 40%;
+}
+
+#menuToggle ul li span{
+    margin: 5%;
+    background-color: black;
+    width: 90%;
+    height: 1px;
+}
+
  #menu
  {
    position: absolute;
    width: 100%;
    margin: -100px 0 0 0;
    padding-bottom: 50px;
-   padding-top: 100px;
-   
+   padding-top: 45px;
    background: #ededed;
    list-style-type: none;
    transform-origin: 0% 0%;
@@ -314,12 +334,36 @@ ul{
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
 
- 
- #menu li
- {
+#reservation{
     text-align: center;
+    font-size: 22px;
+}
+
+#InstaLink{
+    position: absolute;
+    right: 15px;
+    top: 60px;
+}
+ 
+.List
+ {
+   text-align: center;
    padding: 20px 0;
    font-size: 22px;
+ }
+
+ .FirstList
+ {
+   text-align: center;
+   padding-top: 20px;
+   
+   font-size: 22px;
+ }
+
+ .list
+ {
+   text-align: center;
+   padding: 0;
  }
 
  #menuToggle input:checked ~ ul
