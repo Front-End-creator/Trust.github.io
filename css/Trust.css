@@ -180,7 +180,7 @@ ul{
  }
 
  #main{
-    background-image: url(../img/DSC_2666.jpg);
+    background-image: url(../img/Mob_back.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:800px;
@@ -256,7 +256,7 @@ ul{
    margin-bottom: 5px;
    margin-left: 50px;
    position: inherit;
-   background: #cdcdcd;
+   background: tomato;
    border-radius: 3px;
    
    z-index: 1;
@@ -308,6 +308,13 @@ ul{
      padding: 10px 40px 10px 40px;
  }
 
+ .RecBut:hover{
+    border-color: tomato;
+    color: tomato;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 #MobLog{
     width: 40%;
 }
@@ -318,6 +325,16 @@ ul{
     width: 90%;
     height: 1px;
 }
+
+.logo{
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+ .logo:hover{
+    filter: brightness(10);
+} 
 
  #menu
  {
@@ -339,12 +356,6 @@ ul{
     font-size: 22px;
 }
 
-#InstaLink{
-    position: absolute;
-    right: 15px;
-    top: 60px;
-}
- 
 .List
  {
    text-align: center;
