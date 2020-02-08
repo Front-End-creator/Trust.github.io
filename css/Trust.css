@@ -96,7 +96,7 @@ body {
     height: 50px;
     background-color: #fff;
     border-radius: 50%;
-    top: 50%;
+    top: calc(50% - 25px);
 }
 
 #prev-btn:hover, #next-btn:hover {
@@ -400,7 +400,7 @@ body {
      outline:none;
      border-style: solid;
      padding: 10px 40px 10px 40px;
-     height: 50.4px;
+     height: 55.4px;
  }
 
  .RecBut:hover{
@@ -411,7 +411,7 @@ body {
 }
 
 .log_Butt{
-    height: 52px;
+    height: 55px;
 }
 
 #MobLog{
