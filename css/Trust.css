@@ -151,7 +151,7 @@ ul{
 
 .log_Butt{
     outline:none;
-    font-size: 35px;
+    font-size: 30px;
     border-width: 3px;
     padding: 5px 30px 5px 30px;
     background-color: white;
@@ -216,7 +216,7 @@ ul{
    -webkit-user-select: none;
    user-select: none;
  }
- 
+
  .link
  {
    text-decoration: none;
@@ -326,15 +326,11 @@ ul{
     height: 1px;
 }
 
-.logo{
+#logoMob{
     width: 60px;
     height: 60px;
     transition: 0.5s;
 }
-
- .logo:hover{
-    filter: brightness(10);
-} 
 
  #menu
  {
