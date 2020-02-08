@@ -411,7 +411,8 @@ body {
 }
 
 .log_Butt{
-    height: 55px;
+    height: 54px;
+    padding-bottom: 2px;
 }
 
 #MobLog{
