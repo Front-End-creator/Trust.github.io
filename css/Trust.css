@@ -36,18 +36,10 @@ ul{
     padding: 0px;
 }
 
-#Service{
-    background-color: black;
-    height: 1500px;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-
 #block-for-slider {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 50px;
 
 }
 
@@ -55,10 +47,6 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
     user-select: none;
     text-align: center;
 }
@@ -72,6 +60,12 @@ body {
     -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
     -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
     transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper {
+    position: relative;
+    display: flex;
+    transform: translateX();
 }
 
 #slidewrapper, #slidewrapper ul, #slidewrapper li {
@@ -90,25 +84,51 @@ body {
     width: 100%;
 }
 
-#prev-btn, #next-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: calc(50% - 25px);
-}
+
 
 #prev-btn:hover, #next-btn:hover {
     cursor: pointer;
+    opacity: 1;
 }
 
-#prev-btn {
-    left: 20px;
+#prev-btn{
+    left:20px;
+}
+
+.slider{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 70px;
+    top: calc(50% - 35px);
+    background: tomato;
+  }
+
+  .slider::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+#prev-btn::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+
 }
 
 #next-btn {
     right: 20px;
+}
+
+#next-btn::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 #nav-btns {
@@ -133,6 +153,10 @@ body {
 
 .slide-nav-btn:hover {
     cursor: pointer;
+}
+
+.active{
+    background: tomato;
 }
 
 .LogoType{
@@ -224,16 +248,6 @@ body {
 }
 
 
-.Image{
-    width: 30%;
-    margin-bottom: 50px;
-}
-
-.AboutImg{
-    display: flex;
-    justify-content: space-around;
-}
-
 .flex-conteiner{
     display:flex;
     justify-content: space-between;
@@ -278,15 +292,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height:800px;
-}
-
-.Image{
-    width: 90%;
-}
-
-.AboutImg{
-    display: block;
-    text-align: center;
 }
 
  #media{
@@ -411,8 +416,8 @@ body {
 }
 
 .log_Butt{
-    height: 54px;
-    padding-bottom: 2px;
+    height: auto;
+    padding: 5px 10px;
 }
 
 #MobLog{
@@ -479,13 +484,14 @@ body {
  }
 }
 
-@media (max-width: 1068px){
-    .Image{
-        width: 90%;
-    }
-    
-    .AboutImg{
-        display: block;
-        text-align: center;
-    }
-}
+
+.slider{
+    width: 30px;
+    height: 35px;
+    top: calc(50% - 17.5px);
+  }
+
+  .slider::before{
+    width: 20px;
+    height: 20px;
+  }
