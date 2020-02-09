@@ -37,10 +37,9 @@ ul{
 }
 
 #block-for-slider {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding-bottom: 50px;
-
 }
 
 #viewport {
@@ -54,11 +53,7 @@ ul{
 #slidewrapper {
     position: relative;
     width: calc(100% * 4);
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
-    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
-    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
     transition-timing-function: cubic-bezier(.67,.01,.23,1);
 }
 
@@ -208,20 +203,18 @@ ul{
     display: none;
 }
 
-#helper{
-    font-size: 40px;
+#Abt h4{
+    font-size: 400%;
     text-align: center;
     margin:0;
     padding-bottom: 40px;
 }
 
-#Abt p{
-    font-size: 40px;
-}
-#About{
+
+#Abt h1{
     text-align: center;
     padding-top: 80px;
-    font-size: 80px;
+    font-size: 700%;
     margin: 0px;
 }
 
@@ -242,7 +235,7 @@ ul{
 }
 
 .RecButt:hover{
-    background-color:red;
+    background-color:tomato;
     color:white;
     cursor: pointer;
 }
@@ -276,6 +269,60 @@ ul{
     color:white;
     background-color: #c52d2f;
     cursor: pointer;
+}
+
+#Service{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    background-color: black;
+}
+
+#Service h1{
+    color: white;
+    font-size: 700%;
+}
+
+
+#PriceList{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+#PriceList ul{
+    list-style: none;
+
+}
+
+#PriceList ul li{
+    padding: 20px;
+}
+
+#PriceList ul span{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    position: inherit;
+}
+
+
+table.text  {
+    width:  100%;
+    border-spacing: 0;
+}
+table.text td { 
+    width: 70%;
+    vertical-align: top; 
+}
+table.text td.rightcol { 
+    width: 70%;
+    vertical-align: top; 
+}
+td.rightcol { 
+    text-align: right; 
 }
 
 
@@ -485,10 +532,13 @@ ul{
  {
    transform: none;
  }
+
+ #block-for-slider {
+    width: 80%;
+
 }
 
-
-.slider{
+ .slider{
     width: 30px;
     height: 35px;
     top: calc(50% - 17.5px);
@@ -498,3 +548,10 @@ ul{
     width: 20px;
     height: 20px;
   }
+
+  #PriceList{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+}
