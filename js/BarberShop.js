@@ -83,3 +83,13 @@ function prevSlide() {
 function slide(navBtnId) {
     $(".slide-nav-btn").removeClass("active").eq(navBtnId).addClass("active");
 }
+
+
+$(document).ready(function(){
+    $(".header").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
