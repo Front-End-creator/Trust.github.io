@@ -86,7 +86,7 @@ function slide(navBtnId) {
 
 
 $(document).ready(function(){
-    $(".header, #menuToggle").on("click","a", function (event) {
+    $(".header .item, #menuToggle .List").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

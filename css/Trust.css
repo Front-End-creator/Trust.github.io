@@ -354,23 +354,57 @@ td.right {
 
 #ContMenu li{
     width: 50%;
-    height: auto;
 }
+
 
 iframe{
     width: 100%;
     height: 100%;
 }
 
+
 #info h1{
     text-align: center;
     font-size:3vw;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 
 #info section{
     padding-left: 80px;
+}
+
+#SocNet{
+    display:flex;
+    justify-content:center;
+    padding-bottom: 50px;
+}
+
+#SocNet i{
+    padding: 0 15px;;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer span{
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+    background-color: black;
+    display:block;
+}
+
+footer div{
+    width: 60%
+}
+
+footer p{
+    font-size:20px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 768px){
@@ -561,6 +595,13 @@ iframe{
    font-size: 22px;
  }
 
+ #LogoList
+ {
+   text-align: center;
+   padding: 20px 0;
+   font-size: 22px;
+ }
+
  .FirstList
  {
    text-align: center;
@@ -616,4 +657,34 @@ iframe{
     font-size: 50px;
     text-transform: uppercase;
 }
+
+#ContMenu ul{
+    flex-wrap:wrap;
+}
+
+#ContMenu li{
+    width: 100%;
+}
+
+#info section{
+    padding-left: 30px;
+}
+
+section p, section i{
+    font-size: 15px;
+}
+
+#info h1{
+    font-size: 10vw;
+}
+
+#info{
+    order:1;
+}
+
+#maps{
+    order:2;
+    height: 350px;
+}
+
 }
