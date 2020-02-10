@@ -204,7 +204,7 @@ ul{
 }
 
 #Abt h4{
-    font-size: 400%;
+    font-size: 300%;
     text-align: center;
     margin:0;
     padding-bottom: 40px;
@@ -214,7 +214,7 @@ ul{
 #Abt h1{
     text-align: center;
     padding-top: 80px;
-    font-size: 700%;
+    font-size: 600%;
     margin: 0px;
 }
 
@@ -271,17 +271,16 @@ ul{
     cursor: pointer;
 }
 
-#Service{
+#Service, #Team{
     display: flex;
     align-items: center;
-    height: 300px;
     justify-content: center;
     background-color: black;
 }
 
-#Service h1{
+#Service h1, #Team h1{
     color: white;
-    font-size: 700%;
+    font-size: 10vw;
 }
 
 
@@ -325,6 +324,28 @@ td.rightcol {
     text-align: right; 
 }
 
+#TeamList{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.barber{
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#TeamList p{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.barber img{
+    width: 60%;
+    height: auto;
+}
 
 @media (max-width: 768px){
 
@@ -549,9 +570,24 @@ td.rightcol {
     height: 20px;
   }
 
-  #PriceList{
+#Service h1, #Team h1{
+    font-size: 15vw;
+}
+
+#PriceList{
     width: 90%;
     margin: 0 auto;
     font-size: 18px;
+}
+
+.barber{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#TeamList p{
+    font-size: 50px;
+    text-transform: uppercase;
 }
 }
