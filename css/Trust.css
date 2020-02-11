@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Badas Neus Regular";
     src: url("../fonts/BebasNeueRegular.otf") format("opentype");
-    }
+}
 
 
 body {
@@ -381,8 +381,15 @@ iframe{
 }
 
 #SocNet i{
-    padding: 0 15px;;
+    padding: 0 15px;
+    opacity: 0.5;
 }
+
+#SocNet i:hover{
+    opacity: 1;
+    transition:0.5s;
+}
+
 
 footer{
     display:flex;
@@ -406,6 +413,32 @@ footer p{
     font-size:20px;
     margin-bottom: 40px;
 }
+
+#abs{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 65px;
+    height: 65px;
+    z-index:500;
+    background-color: grey;
+    opacity: 0.3;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#abs img{
+    width: 40x;
+    height: 40px;
+}
+
+#abs:hover{
+    opacity: 1;
+}
+
 
 @media (max-width: 768px){
 
@@ -685,6 +718,11 @@ section p, section i{
 #maps{
     order:2;
     height: 350px;
+}
+
+#abs{
+    bottom: 30px;
+    right: 30px;
 }
 
 }

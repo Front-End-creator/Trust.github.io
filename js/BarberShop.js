@@ -86,10 +86,10 @@ function slide(navBtnId) {
 
 
 $(document).ready(function(){
-    $(".header .item, #menuToggle .List").on("click","a", function (event) {
+    $("#abs, .header .item, #menuToggle .List").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
-            top = $(id).offset().top;
+        top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
 });
