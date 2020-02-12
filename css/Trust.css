@@ -25,7 +25,7 @@ body {
 }
 
 #main{
-    background-image: url(../img/back_demo\(1\).jpg);
+    background-image: url(../img/back.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:800px;
@@ -450,7 +450,7 @@ footer p{
  }
 
  #main{
-    background-image: url(../img/Mob_back.jpg);
+    background-image: url(../img/Mob.jpg);
     background-size: cover;
     background-attachment: fixed;
     height:800px;
