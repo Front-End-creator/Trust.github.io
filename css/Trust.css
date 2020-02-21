@@ -18,7 +18,7 @@
   
   .preloader__image {
     position: relative;
-    top: 50%;
+    top: 70%;
     left: 50%;
     width: 100px;
     height: 100px;
@@ -26,6 +26,13 @@
     margin-left: -50px;
     text-align: center;
     animation: preloader-rotate 2s infinite linear;
+  }
+
+  #loadimg{
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      width: 50%;
   }
   
   @keyframes preloader-rotate {
