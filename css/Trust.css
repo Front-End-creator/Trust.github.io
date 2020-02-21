@@ -64,7 +64,7 @@ body {
 }
 
 #main{
-    background-image: url(../img/back.jpg);
+    background-image: url(../img/back.png);
     background-size: cover;
     background-attachment: fixed;
     height:800px;
