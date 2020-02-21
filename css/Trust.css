@@ -374,18 +374,21 @@ td.right {
 }
 
 .barber{
-    width: 50%;
+    width: 30%;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#TeamList p{
-    font-size: 50px;
+#TeamList a{
+    font-size: 40px;
+    color: black;
+    text-decoration:none;
     text-transform: uppercase;
 }
 
 .barber img{
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
@@ -750,7 +753,7 @@ footer p{
     padding-top: 20px;
 }
 
-#TeamList p{
+#TeamList a{
     font-size: 50px;
     text-transform: uppercase;
 }
