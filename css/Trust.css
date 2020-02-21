@@ -507,6 +507,11 @@ footer p{
 }
 
 
+#loadimg{
+    width: 80%;
+    left: 10%;
+}
+
  #main{
     background-image: url(../img/Mob.jpg);
     background-size: cover;
