@@ -69,10 +69,8 @@ ul{
 }
 
 .slide {
-    width: calc(100%/4);
     list-style: none;
     display: inline;
-    float: left;
 }
 
 .slide-img {
@@ -312,6 +310,7 @@ table.text  {
     width:  100%;
     border-spacing: 0;
 }
+
 table.text td, td.right { 
     width: 70%;
     vertical-align: top; 
@@ -438,6 +437,10 @@ footer p{
 #abs:hover{
     opacity: 1;
     transition: 0.5s;
+}
+
+#maps{
+    height: auto;
 }
 
 
