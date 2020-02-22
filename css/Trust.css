@@ -11,8 +11,7 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    background-color: #ffffff;
     z-index: 1001;
   }
   
@@ -20,12 +19,11 @@
     position: relative;
     top: 70%;
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
     text-align: center;
-    animation: preloader-rotate 2s infinite linear;
   }
 
   #loadimg{
@@ -35,11 +33,6 @@
       width: 50%;
   }
   
-  @keyframes preloader-rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
   
   .loaded_hiding .preloader {
     transition: 0.3s opacity;
