@@ -496,16 +496,16 @@ footer p{
    padding: 0;
  }
 
-
- .preloader {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-
 #loadimg{
     width: 80%;
     left: 10%;
+}
+
+.preloader__image{
+    width:100px;
+    height: 100px;
+    left: -50px;
+    top: -50px;
 }
 
  #main{
