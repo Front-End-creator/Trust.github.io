@@ -501,13 +501,6 @@ footer p{
     left: 10%;
 }
 
-.preloader__image{
-    width:100px;
-    height: 100px;
-    left: -50px;
-    top: -50px;
-}
-
  #main{
     background-image: url(../img/Mob.jpg);
     background-size: cover;
