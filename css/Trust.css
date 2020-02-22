@@ -11,7 +11,8 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(85,85,85,1) 0%, rgba(195,195,195,1) 15%, rgba(195,195,195,1) 85%, rgba(255,255,255,1) 100%);
     z-index: 1001;
   }
   
