@@ -377,8 +377,8 @@ td.right {
 .barber{
     width: 30%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #TeamList a{
@@ -386,6 +386,11 @@ td.right {
     color: black;
     text-decoration:none;
     text-transform: uppercase;
+}
+
+#TeamList a:hover{
+    color: tomato;
+    transition: 0.5s;
 }
 
 .barber img{
