@@ -18,18 +18,25 @@
   
   .preloader__image {
     position: relative;
-    top: 70%;
+    top: 65%;
     left: 50%;
     width: 200px;
     height: 200px;
     margin-top: -100px;
     margin-left: -100px;
     text-align: center;
+    /* animation: preload 2s infinite linear; */
   }
+
+  /* @keyframes preload {
+        100% {
+            transform:rotate(360deg);
+        }
+  } */
 
   #loadimg{
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 25%;
       width: 50%;
   }
@@ -453,7 +460,7 @@ footer div{
 
 footer p{
     font-size:20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #abs{
