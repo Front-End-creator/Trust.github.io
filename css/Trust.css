@@ -19,11 +19,9 @@
   .preloader__image {
     position: relative;
     top: 65%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
     text-align: center;
   }
 
