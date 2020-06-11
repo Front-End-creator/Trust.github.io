@@ -11,9 +11,9 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(85,85,85,1) 0%, rgba(195,195,195,1) 15%, rgba(195,195,195,1) 85%, rgba(255,255,255,1) 100%);
+    background-color: black;
     z-index: 1001;
+    
   }
   
   .preloader__image {
@@ -25,14 +25,7 @@
     margin-top: -100px;
     margin-left: -100px;
     text-align: center;
-    /* animation: preload 2s infinite linear; */
   }
-
-  /* @keyframes preload {
-        100% {
-            transform:rotate(360deg);
-        }
-  } */
 
   #loadimg{
       position: absolute;
@@ -40,7 +33,19 @@
       left: 25%;
       width: 50%;
   }
-  
+
+  #loading{
+      animation: 2s linear 0s normal none infinite running rot;
+  }
+
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   
   .loaded_hiding .preloader {
     transition: 0.3s opacity;
@@ -84,7 +89,7 @@ ul{
 }
 
 #block-for-slider {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -99,7 +104,7 @@ ul{
 
 #slidewrapper {
     position: relative;
-    width: calc(100% * 4);
+    width: calc(100% * 8);
     transition: 1s;
     transition-timing-function: cubic-bezier(.67,.01,.23,1);
 }
@@ -121,7 +126,7 @@ ul{
 }
 
 .slide-img {
-    width: 100%;
+    width: 105%;
 }
 
 
@@ -277,12 +282,16 @@ ul{
     border:none;
     font-family: "Badas Neus Regular";
     margin-top:13.2px;
+    border-style: solid; 
+    border-width: 2px;
+    border-color: white;
 }
 
 .RecButt:hover{
     background-color:tomato;
     color:white;
     cursor: pointer;
+    border-color: white;
 }
 
 
@@ -386,16 +395,17 @@ td.right {
     color: black;
     text-decoration:none;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 #TeamList a:hover{
     color: tomato;
-    transition: 0.5s;
 }
 
 .barber img{
     width: 50%;
     height: auto;
+    border-radius: 50%;
 }
 
 
@@ -485,8 +495,9 @@ footer p{
 
 
 #abs img{
-    width: 40x;
-    height: 40px;
+    width: 45px;
+    height: 30px;
+    transform: translateY(2px);
 }
 
 #abs:hover{
@@ -538,7 +549,6 @@ footer p{
  {
    display: block;
    position: relative;
-   top: 30px;
    -webkit-user-select: none;
    user-select: none;
  }
@@ -560,11 +570,11 @@ footer p{
  {
    display: block;
    width: 40px;
-   height: 32px;
+   height: 28px;
    position: absolute;
-   top: -7px;
+   top: 33px;
    left: -5px;
-   margin-left: 50px;
+   margin-left: 40px;
    
    cursor: pointer;
    
@@ -580,11 +590,11 @@ footer p{
    width: 33px;
    height: 4px;
    margin-bottom: 5px;
-   margin-left: 50px;
+   margin-left: 40px;
    position: inherit;
-   background: tomato;
+   background: black;
    border-radius: 3px;
-   
+   top: 35px;
    z-index: 1;
    
    transform-origin: 4px 0px;
@@ -593,6 +603,7 @@ footer p{
                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                opacity 0.55s ease;
  }
+
  
  
  #menuToggle span:first-child
@@ -678,7 +689,7 @@ footer p{
    list-style-type: none;
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
-   
+   top: 80px;
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
 

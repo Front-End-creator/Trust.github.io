@@ -84,7 +84,6 @@ function slide(navBtnId) {
     $(".slide-nav-btn").removeClass("active").eq(navBtnId).addClass("active");
 }
 
-
 $(document).ready(function(){
     $("#abs, .header .item, #menuToggle .List").on("click","a", function (event) {
         event.preventDefault();
