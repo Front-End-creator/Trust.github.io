@@ -104,7 +104,7 @@ ul{
 
 #slidewrapper {
     position: relative;
-    width: calc(100% * 8);
+    width: calc(100% * 6);
     transition: 1s;
     transition-timing-function: cubic-bezier(.67,.01,.23,1);
 }
@@ -529,7 +529,7 @@ footer p{
     background-image: url(../img/Mob.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height:800px;
+    height:700px;
 }
 
  #media{
