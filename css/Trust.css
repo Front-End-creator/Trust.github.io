@@ -18,10 +18,10 @@
   
   .preloader__image {
     position: relative;
-    top: 65%;
-    left: calc(50% - 50px);
-    width: 100px;
-    height: 100px;
+    top: 70%;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
     text-align: center;
   }
 
@@ -528,7 +528,7 @@ footer p{
     background-size: cover;
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
-    height:700px;
+    height:600px;
 }
 
  #media{
