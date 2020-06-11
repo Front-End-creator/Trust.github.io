@@ -548,6 +548,10 @@ footer p{
      display: inline;
  }
 
+ #main{
+    height: 600px;
+}
+
 
  .LogoType{
     width: 50%;
