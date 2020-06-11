@@ -75,10 +75,19 @@ body {
 }
 
 #main{
+    height: 800px;
+}
+
+#main:before {
+    content: '';
     background-image: url(../img/back.png);
     background-size: cover;
-    background-attachment: fixed;
-    height:800px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 ul{
@@ -523,12 +532,16 @@ footer p{
     left: 10%;
 }
 
- #main{
+
+#main:before {
+    content: '';
     background-image: url(../img/Mob.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    height:600px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
  #media{
