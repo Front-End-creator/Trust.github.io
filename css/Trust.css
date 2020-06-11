@@ -527,6 +527,7 @@ footer p{
     background-image: url(../img/Mob.jpg);
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
     height:700px;
 }
 
