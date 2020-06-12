@@ -74,10 +74,6 @@ body {
     margin-top: 20px;
 }
 
-#main{
-    height: 800px;
-}
-
 #main:before {
     content: '';
     background-image: url(../img/back.png);
@@ -551,9 +547,6 @@ footer p{
      display: inline;
  }
 
-#main{
-    height: 800px;
-}
 
 
  .LogoType{
