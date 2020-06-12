@@ -353,6 +353,7 @@ ul{
 
 #PriceList ul{
     list-style: none;
+    margin: 0;
 
 }
 
@@ -388,6 +389,7 @@ td.right {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .barber{
@@ -548,7 +550,7 @@ footer p{
      display: inline;
  }
 
- #main{
+#main{
     height: 600px;
 }
 
