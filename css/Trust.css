@@ -317,6 +317,7 @@ ul{
     border-width: 3px;
     padding: 5px 30px 5px 30px;
     background-color: white;
+    border-color: white;
     margin-right: 20px;
     border-style: solid;
     font-family: "Badas Neus Regular";
@@ -551,7 +552,7 @@ footer p{
  }
 
 #main{
-    height: 600px;
+    height: 800px;
 }
 
 
