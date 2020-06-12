@@ -537,7 +537,7 @@ footer p{
 #main:before {
     content: '';
     background-image: url(../img/Mob.jpg);
-    background-image: 100%;
+    background-size: 100%;
     position: fixed;
     left: 0;
     right: 0;
