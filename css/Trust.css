@@ -788,11 +788,11 @@ footer p{
     width: 100%;
 }
 
-#info section{
+#info #contacts{
     padding-left: 30px;
 }
 
-section p, section i{
+#contacts p, #contacts i{
     font-size: 15px;
 }
 
