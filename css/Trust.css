@@ -357,7 +357,7 @@ ul{
     padding: 20px;
 }
 
-#PriceList ul span{
+#PriceList ul .spanline{
     width: 100%;
     height: 1px;
     background-color: black;
@@ -379,6 +379,20 @@ table.text td, td.right {
 td.right { 
     text-align: right; 
 }
+
+.stock{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color:red;
+    font-family: 'Roboto', sans-serif;
+    line-height: 0.8;
+}
+
+.newprice{
+    color: red;
+}
+
 
 #TeamList{
     list-style: none;
@@ -762,12 +776,21 @@ footer p{
 #Service h1, #Team h1, #Contacts h1{
     font-size: 15vw;
 }
+.stock{
+    line-height: 1;
+}
 
 #PriceList{
     width: 90%;
     margin: 0 auto;
     font-size: 18px;
 }
+	
+	
+#PriceList ul li p span {
+    font-size: 15px !important;
+} 
+
 
 .barber{
     width: 100%;
