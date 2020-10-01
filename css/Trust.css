@@ -380,20 +380,6 @@ td.right {
     text-align: right; 
 }
 
-.stock{
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    color:red;
-    font-family: 'Roboto', sans-serif;
-    line-height: 0.8;
-}
-
-.newprice{
-    color: red;
-}
-
-
 #TeamList{
     list-style: none;
     display: flex;
