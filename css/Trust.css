@@ -779,6 +779,10 @@ footer p{
 #PriceList ul li p span {
     font-size: 15px !important;
 } 
+	
+#lowercase{
+	font-size: 13px;
+}
 
 
 .barber{
