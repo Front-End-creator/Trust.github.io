@@ -365,6 +365,9 @@ ul{
     position: inherit;
 }
 
+#lowercase{
+	font-size: 28px;
+}
 
 table.text  {
     width:  100%;
