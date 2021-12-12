@@ -850,6 +850,11 @@ footer p:last-child{
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
 
+
+ #Abt h1{
+    font-size: 64px;
+}
+
 #reservation{
     text-align: center;
     font-size: 22px;
@@ -898,6 +903,11 @@ footer p:last-child{
 }
 .stock{
     line-height: 1;
+}
+
+.slider{
+    font-size: 55px;
+    transform: translateY(-30%);
 }
 
 #PriceList{
