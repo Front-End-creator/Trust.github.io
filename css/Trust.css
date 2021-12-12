@@ -747,8 +747,8 @@ footer p:last-child{
    position: absolute;
    background: black;
    border-radius: 3px;
-   top: 4px;
-   left: 4px;
+   top: 9px;
+   left: 8.5px;
    z-index: 1;
    
    transform-origin: 4px 0px;
@@ -760,10 +760,10 @@ footer p:last-child{
 
  #span_conteiner{
     position: inherit;
-    top: 30px;
-    left: 35px;
-    width: 40px;
-    height: 30px;
+    top: 25px;
+    left: 30px;
+    width: 50px;
+    height: 40px;
     z-index: 101;
     background-color: #ededed;
     border-radius: 5px;
@@ -773,12 +773,12 @@ footer p:last-child{
 
  #span_conteiner span:nth-child(2)
  {
-     top: 13px;
+     top: 18px;
  }
 
  #span_conteiner span:nth-child(3)
  {
-     top: 22px;
+     top: 27px;
  }
 
 
@@ -799,13 +799,13 @@ footer p:last-child{
    opacity: 1;
    transform: rotate(45deg) translate(0, -5px);
    background: #232323;
-   left: 1px;
-   top: 5px;
+   left: 6px;
+   top: 10px;
  }
 
  #menuToggle input:checked ~ #span_conteiner
  {
-    width: 29px;
+    width: 40px;
  }
 
  #menuToggle input:checked ~ #span_conteiner span:nth-child(2)
@@ -817,7 +817,7 @@ footer p:last-child{
  #menuToggle input:checked ~ #span_conteiner span:nth-child(3)
  {
    transform: rotate(-45deg) translate(0, -1px);
-   top: 23px;
+   top: 28px;
  }
 
  .RecBut{
