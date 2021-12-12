@@ -893,17 +893,6 @@ footer p:last-child{
 
 }
 
- .slider{
-    width: 30px;
-    height: 35px;
-    top: calc(50% - 17.5px);
-  }
-
-  .slider::before{
-    width: 20px;
-    height: 20px;
-  }
-
 #Service h1, #Team h1, #Contacts h1{
     font-size: 15vw;
 }
