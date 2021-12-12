@@ -2,20 +2,37 @@
 <html lang="en">
 
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177444804-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-177444804-1');
+  setTimeout(function(){ga('send', 'event', 'nobouncy', '15sec')}, 15000);
+
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[]; 
+    w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TKL6ND9');
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/Trust.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Стиль, простота, практичність, лаконічність, комфорт, якість та атмосфера. Всього цього в нашому барбершопі більше чим квадратних метрів. Заходь і переконайся!">
+  <meta name="keywords" content="Бербершоп, стрижка, парикмахерская, мастера, барбершоп Киев, борода, комплекс, траст брабершоп, траст, Trust, Trust Barbershop, barbershop">
   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/new_icon.ico" type="image/x-icon">
   <title>Trust BarberShop</title>
 </head>
 
 <body>
   <div class="preloader">
-    <img id = "loadimg" src = "img/logo.png">
-    <img id = "loading" src = "img/loading.png" class = "preloader__image">
+    <img id = "loadimg" src = "img/logo.png" alt = "Загрузка логотипа">
+    <img id = "loading" src = "img/loading.png" class = "preloader__image" alt = "Загрузка страницы">
   </div>
   <div id = "main">
     
@@ -26,29 +43,34 @@
     <span></span>
     <span></span>
     <ul id="menu">
-      <li class = "FirstList"><img id = "MobLog" src = "img/logo_mob.png"></li>
+      <li class = "FirstList"><img id = "MobLog" src = "img/logo_mob.png"  alt = "Trust Mobile"></li>
       <li class ="list"><span></span></li>
       <li class = "List"><a class = "link" href="#Abt">ПРО НАС</a></li>
       <li class = "List"><a class = "link" href="#Service">ПОСЛУГИ</a></li>
       <li class = "List"><a class = "link" href="#Team">КОМАНДА</a></li>
       <li class = "List"><a class = "link" href="#Contacts">КОНТАКТИ</a></li>
       <li id = "reservation"><button onclick ="document.location= 'https://n295623.yclients.com/company:285989'" class = "RecBut">ОНЛАЙН ЗАПИС</button></li>
-      <li id = "LogoList"><a target="_blank" class = "link" href="https://www.instagram.com/pvnch.176/?hl=ua"><img id = "logoMob" src = "img/Crest-2.png"></a></li>
+      <li id = "LogoList"><a target="_blank" class = "link" href="https://www.instagram.com/pvnch.176/?hl=ua"><img id = "logoMob" src = "img/Crest-2.png" alt = "Крест PVNCH"></a></li>
     </ul>
   </div>
 </div>
     <div class="header">
         <ul class="flex-conteiner">
-          <li class = "phone"><i class="fa fa-phone" style="color: white;">
-            </i>
-            <span class="phone_number">+38 (093)-331-76-00 </span>
-            <br>
-            <i class="fa fa-map-marker" aria-hidden="true" style="color: white;"></i>
-            <span class="phone_number">  М.КИЇВ ВУЛ.ЛЮТЕРАНСЬКА 10</span>
+          <li class = "info">
+            <a href = "tel:+38 (093)-331-76-00" class = "info__link">
+              <span class = "mob-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </span>
+              +38 (093)-331-76-00 </a>
+            <a href = "https://goo.gl/maps/XtRiR3ZvwmahSCQR9" class = "info__link">
+              <span class = "marker-icon">
+                <ion-icon name="map-outline"></ion-icon>
+              </span>
+              М.КИЇВ ВУЛ.ЛЮТЕРАНСЬКА 10а</a>
           </li>
               <li class = "item"><a class = "list" href="#Abt">ПРО НАС</a></li>
               <li class = "item"><a class = "list" href="#Service">ПОСЛУГИ</a></li>
-              <li><a target="_blank" href="https://www.instagram.com/pvnch.176/?hl=ua"><img class = "logo" src = "img/Crest-1.png"></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/pvnch.176/?hl=ua"><img class = "logo" src = "img/Crest-1.png" alt = "Крест PVNCH"></a></li>
               <li class = "item"><a class = "list" href="#Team">КОМАНДА</a></li>
               <li class = "item"><a class = "list" href="#Contacts">КОНТАКТИ</a></li>
           <li class = "record">
@@ -57,7 +79,7 @@
         </ul>
       </div>
         <div id = "log">
-          <img class = "LogoType" src = "img/logo.png">
+          <img class = "LogoType" src = "img/logo.png" alt = "Trust">
         </div>
         <div id = "log_1">
           <button onclick ="document.location= 'https://n295623.yclients.com/company:285989'" class = "log_Butt">ОНЛАЙН ЗАПИС</button>
@@ -68,22 +90,22 @@
           <h1>
             TRUST YOUR BARBER
           </h1>
-          <h4>НАМ ДОВIРЯЮТЬ</h4>
+          <h2>НАМ ДОВIРЯЮТЬ</h2>
         </div>
           <div id="block-for-slider">
             <div id="viewport">
                 <ul id="slidewrapper">
-                    <li class="slide"><img src="img/5.jpg" alt="1" class="slide-img"></li>
-                    <li class="slide"><img src="img/3.jpg" alt="2" class="slide-img"></li>
-                    <li class="slide"><img src="img/6.jpg" alt="3" class="slide-img"></li>
-                    <li class="slide"><img src="img/7.jpg" alt="4" class="slide-img"></li>
-                    <li class="slide"><img src="img/2.jpg" alt="5" class="slide-img"></li>
-                    <li class="slide"><img src="img/1.jpg" alt="6" class="slide-img"></li>
+                    <li class="slide"><img src="img/5.jpg" class="slide-img" alt = "Фото слайдера 1"></li>
+                    <li class="slide"><img src="img/3.jpg" class="slide-img" alt = "Фото слайдера 2"></li>
+                    <li class="slide"><img src="img/6.jpg" class="slide-img" alt = "Фото слайдера 3"></li>
+                    <li class="slide"><img src="img/7.jpg" class="slide-img" alt = "Фото слайдера 4"></li>
+                    <li class="slide"><img src="img/2.jpg" class="slide-img" alt = "Фото слайдера 5"></li>
+                    <li class="slide"><img src="img/1.jpg" class="slide-img" alt = "Фото слайдера 6"></li>
                 </ul>
     
                 <div id="prev-next-btns">
-                    <div class = "slider" id="prev-btn"></div>
-                    <div class = "slider" id="next-btn"></div>
+                    <div class = "slider" id="prev-btn"><ion-icon name="arrow-back-circle-outline"></ion-icon></div>
+                    <div class = "slider" id="next-btn"><ion-icon name="arrow-forward-circle-outline"></ion-icon></div>
                 </div>
     
                 <ul id="nav-btns">
@@ -97,7 +119,6 @@
             </div>
         </div>
     </div>
-        </div>
         <div id = "Service">
           <h1>ПОСЛУГИ</h1>
         </div>
@@ -108,43 +129,50 @@
               <table class="text">
               <tr>
               <td><strong>СТРИЖКА</strong></td>
-              <td class="right"><strong>500 ₴</strong></td>
+              <td class="right"><strong><span >600 ₴ </span></strong></td>
              </tr>
             </table>
             </li>
-            <span></span>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
             <li><table class="text">
               <tr>
               <td><strong>СТРИЖКА БОРОДИ</strong></td>
-              <td class="right"><strong>300 ₴</strong></td>
+              <td class="right"><strong>350 ₴</strong></td>
              </tr>
             </table></li>
-            <span></span>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
             <li><table class="text">
               <tr>
               <td><strong>СТРИЖКА ПIД НАСАДКУ</strong></td>
-              <td class="right"><strong>300 ₴</strong></td>
+              <td class="right"><strong>350 ₴</strong></td>
              </tr>
             </table></li>
-            <span></span>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
+            <li><table class="text">
+              <tr>
+              <td><strong>ТРIМ <span id = "lowercase">(окантовка, миття голови, укладка)</span></strong></td>
+              <td class="right"><strong><span >200 ₴ </span></strong></td>
+             </tr>
+            </table></li>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
             <li><table class="text">
               <tr>
               <td><strong>СТРИЖКА + СТРИЖКА БОРОДИ</strong></td>
-              <td class="right"><strong>800 ₴</strong></td>
+              <td class="right"><strong><span >900 ₴</span></strong></td>
              </tr>
             </table></li>
-            <span></span>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
             <li><table class="text">
               <tr>
               <td><strong>СТРИЖКА ПIД НАСАДКУ + СТРИЖКА БОРОДИ</strong></td>
-              <td class="right"><strong>600 ₴</strong></td>
+              <td class="right"><strong>700 ₴</strong></td>
              </tr>
             </table></li>
-            <span></span>
+            <li style = "padding: 0;"><span class = "spanline"></span></li>
             <li><table class="text">
               <tr>
               <td><strong>БАТЬКО ТА СИН</strong></td>
-              <td class="right"><strong>900 ₴</strong></td>
+              <td class="right"><strong><span >1000 ₴ </span></strong></td>
              </tr>
             </table></li>
           </ul>
@@ -155,11 +183,11 @@
         </div>
         <div style = "background-color: white;">
           <ul id = "TeamList">
-            <li class = "barber"><img src ="img/Aleksandr.jpg"><br><a href = "https://n295623.yclients.com/company:285989?o=m844909">Олександр Кудринецький</a></li>
-            <li class = "barber"><img src ="img/Oleksiy.jpg"><br><a href = "https://n295623.yclients.com/company:285989?o=m845605">Олексiй Антонов</a></li>
-            <li class = "barber"><img src ="img/Uiriy.jpg"><br><a href = "https://n295623.yclients.com/company:285989?o=m845607">Юрiй Заднiченко</a></li>
-            <li class = "barber"><img src ="img/Sergiy.jpg"><br><a href = "https://n295623.yclients.com/company:285989?o=m845608">Сергiй Хорт</a></li>
-            <li class = "barber"><img src ="img/Igor.jpg"><br><a href = "https://n295623.yclients.com/company:285989?o=m845609">Iгор Карач</a></li>
+            <li class = "barber"><img src ="img/Aleksandr.jpg" alt = "Олександр Кудринецький"><br><a href = "https://n295623.yclients.com/company:285989?o=m844909">Олександр Кудринецький</a></li>
+            <li class = "barber"><img src ="img/Oleksiy.jpg" alt = "Олексiй Антонов"><br><a href = "https://n295623.yclients.com/company:285989?o=m845605">Олексiй Антонов</a></li>
+            <li class = "barber"><img src ="img/Uiriy.jpg" alt = "Юрiй Заднiченко"><br><a href = "https://n295623.yclients.com/company:285989?o=m845607">Юрiй Заднiченко</a></li>
+            <li class = "barber"><img src ="img/Sergiy.jpg" alt = "Сергiй Хорт"><br><a href = "https://n295623.yclients.com/company:285989?o=m845608">Сергiй Хорт</a></li>
+            <li class = "barber"><img src ="img/Igor.jpg" alt = "Iгор Карач"><br><a href = "https://n295623.yclients.com/company:285989?o=m845609">Iгор Карач</a></li>
           </ul>
         </div>
         <div id = "Contacts">
@@ -167,36 +195,43 @@
         </div>
         <div id = "ContMenu" style = "background-color: white;">
           <ul>
-            <li id = "maps"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.10264214261!2d30.5234477!3d50.4452792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec6a62106b1e0d20!2sTrust!5e0!3m2!1sru!2sua!4v1581498692149!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe></li>
+            <li id = "maps"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.10264214261!2d30.5234477!3d50.4452792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec6a62106b1e0d20!2sTrust!5e0!3m2!1sru!2sua!4v1581498692149!5m2!1sru!2sua" style="border:0;" allowfullscreen=""></iframe></li>
             <li id = "info">
-              <h1 style = "padding-bottom: 30px;">ЯК НАС ЗНАЙТИ</h1>
-              <section>
-                <i class="fa fa-phone" style="font-size: 2em; color: tomato;"></i>
-                <span style = "font-size: 2em;">+38 (093)-331-76-00</span>
-                <br>
-                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 2em; color: tomato;"></i>
-                <span style = "font-size: 2em;">  М.КИЇВ ВУЛ.ЛЮТЕРАНСЬКА 10</span>
-              </section>
-              <h1>МИ В СОЦ. МЕРЕЖАХ</h1>
+              <h1>ЯК НАС ЗНАЙТИ</h1>
+              <div id ="contacts">
+                <a href = "tel:+38 (093)-331-76-00">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <span style = "font-size: 2em;">+38 (093)-331-76-00</span>
+                </a>
+                <a href = "https://goo.gl/maps/XtRiR3ZvwmahSCQR9">
+                  <ion-icon name="map-outline"></ion-icon>
+                  <span style = "font-size: 2em;">  М.КИЇВ ВУЛ.ЛЮТЕРАНСЬКА 10а</span>
+                </a>
+              </div>
+              <h1 class = "p-b0">МИ В СОЦ. МЕРЕЖАХ</h1>
               <div id = "SocNet">
-                <a target="_blank" href = "https://www.instagram.com/trust.barbershop/?hl=ua"><i class="fa fa-instagram" style = "color: #f38858; font-size: 3.2em;" aria-hidden="true"></i></a>
-                <a target="_blank" href = "https://t.me/trustbarbershop"><i class="fa fa-telegram" style = " transform: translateY(2px); font-size: 2.8em; color: rgb(78, 194, 240)" aria-hidden="true"></i></a>
-                <a target="_blank" href = "https://www.facebook.com/TRUST.176/"><i class="fa fa-facebook-square"  style = "font-size: 3.2em; color: #3b5998" aria-hidden="true"></i></a>
+                <a target="_blank" href = "https://www.instagram.com/trust.barbershop/?hl=ua"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a target="_blank" href = "https://t.me/trustbarbershop"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a target="_blank" href = "https://www.facebook.com/TRUST.176/"><i class="fa fa-facebook-square"  aria-hidden="true"></i></a>
               </div>
             </li>
           </ul>
         </div>
         <div id = "abs">
-          <a href = "#main"><img src= "img/arrow.png"></a>
+          <a href = "#main">
+            <ion-icon name="arrow-undo-outline"></ion-icon>
+          </a>
         </div>
         <footer style = "background-color: white;">
           <div>
           <span></span>
-          <p>© 2020 Trust Barbershop. All Rights Reserved. </p>
-          <p>Created by Vlad Rudnytskyi. E-mail: valdrudik@gmail.com</p>
+          <p>© 2020-2021 Trust Barbershop. All Rights Reserved. </p>
+          <p>Created by VR.</p>
         </div>
         </footer>
+    <script src="js/BarberShop.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKL6ND9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
-<script src="js/BarberShop.js"></script>
 
 </html>

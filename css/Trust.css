@@ -70,9 +70,8 @@ body {
     z-index: 100;
     height: 74px;
 }	
-.item{
-    margin-top: 20px;
-}
+
+
 
 #main:before {
     content: '';
@@ -87,7 +86,7 @@ body {
 }
 
 ul{
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -143,49 +142,37 @@ ul{
     left:20px;
 }
 
+
 .slider{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    color: #fff;
+    color: white;
     text-align: center;
-    opacity: 0.5;
-    height: 70px;
-    top: calc(50% - 35px);
-    background: tomato;
-  }
+    font-size: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: drop-shadow( 0 0 5px rgba(255, 99, 71, 1));
+    transition: 0.5s ease-in-out;
+}
 
-  .slider::before{
-    content: '';
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-  }
-
-#prev-btn::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-
+.slider:hover{
+    transform: scale(1.2) translateY(-40%);
 }
 
 #next-btn {
     right: 20px;
 }
 
-#next-btn::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
 
 #nav-btns {
     position: absolute;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 20px;
-    padding: 0;
+    padding: 2px 5px;
+    border-radius: 20px;
     margin: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .slide-nav-btn {
@@ -196,7 +183,7 @@ ul{
     height: 20px;
     background-color: #fff;
     border-radius: 50%;
-    margin: 3px;
+    margin: 5px;
 }
 
 .slide-nav-btn:hover {
@@ -204,28 +191,52 @@ ul{
 }
 
 .active{
-    background: tomato;
+    background: #ff6347;
 }
 
 .LogoType{
     width: 30%;
     margin-top: 300px;
     margin-bottom: 40px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
 
 .list{
     transition: 0.5s;
     text-decoration: none; 
-    color: grey;
+    color: white;
     font-size: 23px;
+    letter-spacing: 0.1em;
+    position: relative;
 }
 
 .list:hover{
-    color: white;
+    color: tomato;
     text-decoration: none;
+    text-shadow: 0 0 5px tomato;
 }
 
+.list::after, .list::before{
+    content: '';
+    width: 0%;
+    height: 1.5px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    display: block;
+}
+
+.list::before{
+    top: 0;
+    right: 2px;
+    position: absolute;
+}
+
+
+.list:hover::before, .list:hover::after{
+    width: 97%;
+    background-color: tomato;
+}
 
 .logo{
     width: 60px;
@@ -242,11 +253,28 @@ ul{
 	list-style: none;
 }
 
-.phone{
-    color: white;
+.info{
     margin-left: 20px;
-    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
 }
+
+.info__link{
+    color: white;
+    font-size: 18px;
+    margin: 2px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.info__link:hover{
+    color: tomato;
+}
+
+.info__link span{
+    margin-right: 10px;
+}
+
 
 #Abt{
     background-color: white;
@@ -256,19 +284,23 @@ ul{
     display: none;
 }
 
-#Abt h4{
-    font-size: 300%;
+#Abt h2{
+    font-size: 48px;
     text-align: center;
     margin:0;
     padding-bottom: 40px;
+    letter-spacing: 0.08em;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0, 0.4);
 }
 
 
 #Abt h1{
     text-align: center;
-    padding-top: 80px;
-    font-size: 600%;
+    padding-top: 40px;
+    font-size: 96px;
     margin: 0px;
+    letter-spacing: 0.05em;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
 }
 
 
@@ -277,30 +309,54 @@ ul{
     transition: 0.5s;
     outline:none;
     font-size: 23px;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 5px 10px 5px 10px;
     margin-right: 20px;
-    color:black;
-    background-color:white;
-    border:none;
+    color:white;
+    background-color: transparent;
     font-family: "Badas Neus Regular";
-    margin-top:13.2px;
-    border-style: solid; 
-    border-width: 2px;
-    border-color: white;
+    border: solid 2px white; 
+    letter-spacing: 0.1em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .RecButt:hover{
-    background-color:tomato;
-    color:white;
-    cursor: pointer;
-    border-color: white;
+    transform: scale(1.02);
+    background-color: tomato;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.5);
 }
+
+.RecButt::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, rgba(229, 172, 142, 0.1), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0.1));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+  }
+
+  .RecButt::after{ animation: sheen 2s infinite; }
+
+  @keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -9em);
+    }
+  }
 
 
 .flex-conteiner{
+    height: 100%;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-conteiner ion-icon{
+    transform: translateY(2px);
 }
 
 #log, #log_1{
@@ -321,12 +377,15 @@ ul{
     color:#c52d2f;
     transition: 0.5s;
     margin-bottom: 200px;
+    box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.5);
 }
 
 .log_Butt:hover{
     color:white;
     background-color: #c52d2f;
     cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px 8px rgba(255, 99, 71, 0.5);
 }
 
 #Service, #Team, #Contacts{
@@ -339,6 +398,8 @@ ul{
 #Service h1, #Team h1, #Contacts h1{
     color: white;
     font-size: 7vw;
+    letter-spacing: 0.05em;
+    text-shadow: 3px 3px 0px rgb(255, 255, 255, 0.5);
 }
 
 
@@ -357,7 +418,7 @@ ul{
     padding: 20px;
 }
 
-#PriceList ul span{
+#PriceList ul .spanline{
     width: 100%;
     height: 1px;
     background-color: black;
@@ -365,10 +426,14 @@ ul{
     position: inherit;
 }
 
+#lowercase{
+	font-size: 28px;
+}
 
 table.text  {
     width:  100%;
     border-spacing: 0;
+    letter-spacing: 0.05em;
 }
 
 table.text td, td.right { 
@@ -379,6 +444,7 @@ table.text td, td.right {
 td.right { 
     text-align: right; 
 }
+
 
 #TeamList{
     list-style: none;
@@ -434,34 +500,88 @@ iframe{
 
 #info h1{
     text-align: center;
-    font-size:3vw;
-    padding-top: 30px;
+    font-size: 3vw;
+    padding: 30px 0;
+    letter-spacing: 0.05em;
 }
 
 
-#info section{
+#info h1.p-b0{
+    padding-bottom: 0;
+}
+
+#info #contacts{
     padding-left: 80px;
 }
 
+#contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+#contacts a:hover{
+    color: tomato;
+}
+
+#contacts a ion-icon{
+    font-size: 30px;
+    margin-right: 10px;
+    transform: translateY(3px);
+}
+
 #SocNet{
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     padding-bottom: 50px;
 }
 
-#SocNet i{
+#SocNet a i{
     padding: 0 15px;
-    opacity: 0.5;
+    font-size: 3.2em;
 }
 
-#SocNet i:hover{
-    opacity: 1;
-    transition:0.5s;
+#SocNet a:nth-child(1) i{
+    color: #f38858;
+}
+#SocNet a:nth-child(2) i{
+    font-size: 2.9em;
+    color: #4ec2f0;
+    transform: translateY(2px);
+}
+
+#SocNet a:nth-child(3) i{
+    color: #3b5998;
+}
+#SocNet a{
+    transition: 0.3s ease-in;
+}
+
+#SocNet a:hover{
+    transform: scale(1.2);
+}
+.fa{
+    transition: 0.3s ease-in;
+}
+
+#SocNet a:hover .fa-instagram{
+    filter: drop-shadow( 0 0 10px rgba(243, 137, 88, 0.5));
+}
+#SocNet a:hover .fa-telegram{
+    filter: drop-shadow( 0 0 20px rgba(78, 194, 240, 0.5));
+}
+#SocNet a:hover .fa-facebook-square{
+    filter: drop-shadow( 0 0 20px rgba(59, 88, 152, 0.5));
 }
 
 
 footer{
-    display:flex;
+    display: flex;
     justify-content: center;
     text-align: center;
 }
@@ -479,35 +599,60 @@ footer div{
 }
 
 footer p{
-    font-size:20px;
+    font-size: 28px;
     margin-bottom: 20px;
+}
+
+footer p:last-child{
+    margin-top: 0;
 }
 
 #abs{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 65px;
-    height: 65px;
-    z-index:500;
-    background-color: grey;
-    opacity: 0.3;
-    border-radius: 50%;
+    bottom: -100px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    z-index: 500;
+    background-color: black;
+    border: solid 2px white;
+    opacity: 0.6;
+    border-radius: 20%;
+    transition: 0.5s;
+}
+
+#abs a{
+    width: 100%;
+    height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+#abs a ion-icon{
+    font-size: 32px;
+    transform: rotate(90deg);
+    color: white;
+    transition: 0.5s;
+}
+
+#abs a:hover ion-icon{
+    color: rgba(255, 99, 71);
+}
+
+#abs.active{
+    bottom: 40px;
+}
+
 
 #abs img{
-    width: 45px;
-    height: 30px;
-    transform: translateY(2px);
+    width: 35px;
+    height: 20px;
 }
 
 #abs:hover{
     opacity: 1;
-    transition: 0.5s;
+    border-color: tomato;
 }
 
 #maps{
@@ -570,6 +715,7 @@ footer p{
    text-decoration: none;
    color: #232323;
    transition: color 0.3s ease;
+
  }
  
  .link:hover
@@ -762,12 +908,25 @@ footer p{
 #Service h1, #Team h1, #Contacts h1{
     font-size: 15vw;
 }
+.stock{
+    line-height: 1;
+}
 
 #PriceList{
     width: 90%;
     margin: 0 auto;
     font-size: 18px;
 }
+	
+	
+#PriceList ul li p span {
+    font-size: 15px !important;
+} 
+	
+#lowercase{
+	font-size: 13px;
+}
+
 
 .barber{
     width: 100%;
@@ -777,7 +936,6 @@ footer p{
 
 #TeamList a{
     font-size: 50px;
-    text-transform: uppercase;
 }
 
 #ContMenu ul{
@@ -788,11 +946,11 @@ footer p{
     width: 100%;
 }
 
-#info section{
+#info #contacts{
     padding-left: 30px;
 }
 
-section p, section i{
+#contacts p, #contacts i{
     font-size: 15px;
 }
 

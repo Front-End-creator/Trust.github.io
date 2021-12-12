@@ -8,6 +8,15 @@ $("#logoMob").mouseleave(function(){
 });
 
 
+$(window).scroll(function(){
+    if ( $(window).scrollTop() > 500) {
+        $('#abs').addClass("active");
+    } else {
+        $('#abs').removeClass("active");
+}
+});
+
+
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 3000;
