@@ -378,6 +378,7 @@ ul{
     transition: 0.5s;
     margin-bottom: 200px;
     box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.5);
+    display: inline-block;
 }
 
 .log_Butt:hover{
@@ -829,6 +830,7 @@ footer p:last-child{
      border-style: solid;
      padding: 10px 40px 10px 40px;
      height: 55.4px;
+     display: block;
  }
 
  .RecBut:hover{
