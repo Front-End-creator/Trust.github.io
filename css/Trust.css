@@ -320,6 +320,8 @@ ul{
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
 }
 
 .RecButt:hover{
