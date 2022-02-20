@@ -15,6 +15,29 @@
     j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TKL6ND9');
 </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-965779782"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-965779782');
+</script>
+  <script>
+function gtag_report_conversion(url) {
+  console.log("12");
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-965779782/yK7JCMzVyZEDEMbCwswD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/Trust.css">
@@ -60,7 +83,7 @@
       <li class = "List"><a class = "link" href="#Service">ПОСЛУГИ</a></li>
       <li class = "List"><a class = "link" href="#Team">КОМАНДА</a></li>
       <li class = "List"><a class = "link" href="#Contacts">КОНТАКТИ</a></li>
-      <li id = "reservation"><button onclick ="document.location= 'https://n295623.yclients.com/company:285989'" class = "RecBut">ОНЛАЙН ЗАПИС</button></li>
+      <li id = "reservation"><a onclick ="gtag_report_conversion();" href = "https://n295623.yclients.com/company:285989" class = "RecBut">ОНЛАЙН ЗАПИС</a></li>
       <li id = "LogoList"><a target="_blank" class = "link" href="https://www.instagram.com/pvnch.176/?hl=ua"><img id = "logoMob" src = "img/Crest-2.png" alt = "Крест PVNCH"></a></li>
     </ul>
   </div>
@@ -85,7 +108,7 @@
               <li class = "item"><a class = "list" href="#Team">КОМАНДА</a></li>
               <li class = "item"><a class = "list" href="#Contacts">КОНТАКТИ</a></li>
           <li class = "record">
-            <button onclick ="document.location= 'https://n295623.yclients.com/company:285989'" class = "RecButt">ОНЛАЙН ЗАПИС</button>
+            <a onclick ="gtag_report_conversion();" href = "https://n295623.yclients.com/company:285989" class = "RecButt">ОНЛАЙН ЗАПИС</a>
           </li>
         </ul>
       </div>
@@ -93,7 +116,7 @@
           <img class = "LogoType" src = "img/logo.png" alt = "Trust">
         </div>
         <div id = "log_1">
-          <button onclick ="document.location= 'https://n295623.yclients.com/company:285989'" class = "log_Butt">ОНЛАЙН ЗАПИС</button>
+          <a onclick ="gtag_report_conversion();" href = "https://n295623.yclients.com/company:285989" class = "log_Butt">ОНЛАЙН ЗАПИС</a>
         </div>
       </div>
       <div id = "Abt">
