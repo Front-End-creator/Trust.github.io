@@ -100,6 +100,9 @@ $(document).ready(function(){
         top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+    $(".work__item").on("click", function () {
+        $(this).children().toggleClass("active");
+    });
 });
 
   $(window).on('load', function () {

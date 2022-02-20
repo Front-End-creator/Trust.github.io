@@ -125,10 +125,13 @@ ul{
 .slide {
     list-style: none;
     display: inline;
+    width: calc(100% / 6)
 }
 
 .slide-img {
-    width: 105%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -276,8 +279,10 @@ ul{
 }
 
 
-#Abt{
+#Abt, .service__back, .team__back, #info, footer{
     background-color: white;
+    background-image: url("../img/Crest-mark.png");
+    background-repeat: repeat;
 }
 
 #media{
@@ -388,14 +393,144 @@ ul{
     box-shadow: 0 0 15px 8px rgba(255, 99, 71, 0.5);
 }
 
-#Service, #Team, #Contacts{
+
+.our__work{
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0px;
+    background-image: url("../img/Crest-mark.png");
+    background-repeat: repeat;
+}
+
+.work__list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work__item{
+    width: 400px;
+    height: 400px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    transition: .3s linear;
+    overflow: hidden;
+    position: relative;
+}
+
+.work__item:hover{
+    cursor: pointer;
+    filter: grayscale(0)
+}
+
+.work__item:nth-child(1){
+    background-image: url("../img/dude_1.jpg");
+}
+.work__item:nth-child(2){
+    background-image: url("../img/dude_2.jpg");
+}
+
+.work__item:nth-child(3){
+    background-image: url("../img/dude_3.jpg");
+}
+
+.work__item:nth-child(4){
+    background-image: url("../img/dude_4.jpg");
+}
+
+.work__item:nth-child(5){
+    background-image: url("../img/dude_5.jpg");
+}
+
+.work__item:nth-child(6){
+    background-image: url("../img/dude_6.jpg");
+}
+
+.work__item:nth-child(7){
+    background-image: url("../img/dude_7.jpg");
+}
+
+.work__item:nth-child(8){
+    background-image: url("../img/dude_8.jpg");
+}
+
+.work__item:nth-child(9){
+    background-image: url("../img/dude_9.jpg");
+}
+
+
+.work__info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(100%);
+    display: flex;
+    align-items: flex-end;
+    transition: transform .15s ease-in-out;
+}
+
+.work__info__num{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 120px;
+    color: rgba(128, 128, 128, 0.6);
+    margin: 0;
+    user-select: none;
+}
+
+.work__info__main{
+    width: 100%;
+    margin: 20px;
+}
+
+.work__info__haircut{
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    user-select: none;
+    margin: 0;
+}
+
+.work__info__barber{
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    user-select: none;
+}
+
+.work__info.active{
+    transform: none;
+}
+
+.haircut__length{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    filter: invert();
+    width: 70px;
+    opacity: 0.6;
+}
+
+#Service, #Team, #Contacts, .work__block .heading{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
 }
 
-#Service h1, #Team h1, #Contacts h1{
+#Service h1, #Team h1, #Contacts h1, .work__block div h1{
     color: white;
     font-size: 7vw;
     letter-spacing: 0.05em;
@@ -655,6 +790,11 @@ footer p:last-child{
 
 #maps{
     height: auto;
+}
+@media (max-width: 1260px){
+    .work__item:nth-child(9){
+        display: none;
+    }
 }
 
 
@@ -923,7 +1063,7 @@ footer p:last-child{
     width: 95%;
 }
 
-#Service h1, #Team h1, #Contacts h1{
+#Service h1, #Team h1, #Contacts h1, .work__block div h1{
     font-size: 15vw;
 }
 .stock{
