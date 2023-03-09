@@ -971,6 +971,7 @@ footer p:last-child{
      outline:none;
      border-style: solid;
      padding: 10px 40px 10px 40px;
+     text-decoration: none;
  }
 
  .RecBut:hover{
