@@ -61,6 +61,10 @@ body {
 	font-family: "Badas Neus Regular";
 }
 
+*{
+    font-family: "Badas Neus Regular";
+}
+
 .header{
     overflow: hidden;
     top: 0;
@@ -589,31 +593,134 @@ td.right {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
+    column-gap: 50px;
+    row-gap: 100px;
+    padding: 50px 0;
 }
 
 .barber{
-    width: 30%;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-#TeamList a{
+.barber button{
     font-size: 40px;
     color: black;
-    text-decoration:none;
     text-transform: uppercase;
     transition: 0.5s;
+    margin: 0;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 900;
+    border: none;
 }
 
-#TeamList a:hover{
+
+.barber button:hover{
     color: tomato;
+}
+
+.barber p{
+    font-size: 28px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .barber img{
     width: 50%;
     height: auto;
     border-radius: 50%;
+}
+
+.uniq__prices{
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 94px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 3px rgba(50, 50, 0, 0.5));
+    padding: 20px 30px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s opacity ease-in-out, 0.2s visibility ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uniq__prices.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.uniq__prices .arrow{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    transform: translate(-50%, 100%);
+    background-color: #FFF;
+    box-shadow: 0 0 5px 5px black;
+}
+
+.uniq__prices h4{
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.uniq__prices ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.uniq__prices ul li{
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
+    align-items: baseline;
+}
+
+.uniq__prices ul li section{
+    flex-grow: 3;
+    border-bottom-style: dotted;
+    border-bottom-width: 4px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.uniq__prices a{
+    font-size: 26px;
+    border: solid 2px #000;
+    border-radius: 5px;
+    margin: 25px 0 10px 0;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    transition: all .2s ease-in-out;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.uniq__prices a:hover{
+    background-color: #ff6347;
+    border-color: white;
+    color: white;
 }
 
 
@@ -923,9 +1030,6 @@ footer p:last-child{
      top: 27px;
  }
 
-
- 
- 
  #span_conteiner span:first-child
  {
    transform-origin: 0% 0%;
@@ -1011,7 +1115,6 @@ footer p:last-child{
    position: fixed;
    width: 100%;
    margin: -100px 0 0 0;
-   padding-bottom: 50px;
    padding-top: 45px;
    background: #ededed;
    list-style-type: none;
@@ -1029,6 +1132,7 @@ footer p:last-child{
 #reservation{
     text-align: center;
     font-size: 22px;
+    padding: 20px;
 }
 
 .List
@@ -1097,12 +1201,34 @@ footer p:last-child{
 .barber{
     width: 100%;
     text-align: center;
-    padding-top: 20px;
 }
 
-#TeamList a{
-    font-size: 50px;
+.barber img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
+
+#TeamList{
+    display: flex;
+    flex-direction: column;
+}
+
+.uniq__prices{
+    width: 90%;
+    bottom: auto;
+    top: 250px;
+    transform: translateY(-100%);
+}
+
+.uniq__prices ul li section{
+    border-bottom-width: 2px;
+}
+
+.uniq__prices button{
+    padding: 10px 20px 5px 20px;
+}
+
 
 #ContMenu ul{
     flex-wrap:wrap;

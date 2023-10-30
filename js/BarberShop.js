@@ -5,6 +5,9 @@ $("#logoMob").mouseenter(function(){
 $("#logoMob").mouseleave(function(){
     $("#menuToggle").css({"filter": "invert(0)", "transition": "1s"});
 });
+$(".open__prices").click(function(){
+    $(this).parent().children(".uniq__prices").toggleClass("active");
+});
 });
 
 
@@ -19,7 +22,7 @@ $(window).scroll(function(){
 
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
-var slideInterval = 3000;
+var slideInterval = 5000;
 var navBtnId = 0;
 var translateWidth = 0;
 var currentBtn = 0;
