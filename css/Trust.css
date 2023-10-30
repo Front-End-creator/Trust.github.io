@@ -577,13 +577,14 @@ table.text  {
     letter-spacing: 0.05em;
 }
 
-table.text td, td.right { 
-    width: 70%;
-    vertical-align: top; 
+table.text tr{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 td.right { 
-    text-align: right; 
+    white-space: nowrap;
 }
 
 
@@ -1225,7 +1226,7 @@ footer p:last-child{
     border-bottom-width: 2px;
 }
 
-.uniq__prices button{
+.uniq__prices a{
     padding: 10px 20px 5px 20px;
 }
 
